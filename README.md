@@ -2,6 +2,8 @@
     <img src="https://github.com/stevienovak/Photos-Charts-ML-Projects/blob/main/AlphaPredict%20Logo.png" alt="AlphaPredict_logo" width="1000">
 </div>
 
+![logo](https://github.com/stevienovak/Photos-Charts-ML-Projects/blob/main/AlphaPredict%20Logo.png)
+
 <p align="center">
   <img src="https://img.shields.io/badge/license-MIT-green" alt="License">
   <img src="https://img.shields.io/badge/build-passing-brightgreen" alt="Build">
