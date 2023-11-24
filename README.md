@@ -66,5 +66,38 @@ Launch Jupyter by entering
   <pre style="margin: 0;"><code style="color: #c9d1d9; background-color: #0d1117;">jupyter lab</code></pre>
 </div>
 
+## Guidelines
+In this section, I briefly explain different parts of the project and how to change each. The data for the project downloaded from Yahoo Finance where you can search for a specific market there and download your data under the Historical Data section. Then you create a directory with the name of the stock under the data directory and put the .csv file there. Make sure the dataframe is in the format as follows:
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/stevienovak/garage/main/basic_dataframe.jpg" alt="Basic_df" height="300">
+</p>
+
+
+you can add on technical indicators by performing the following: 
+<div style="background-color: #0d1117; padding: 16px; border-radius: 6px; margin-bottom: 16px;">
+  <pre style="margin: 0;"><code style="color: #c9d1d9; background-color: #0d1117;">!pip install finta</code></pre>
+</div>
+followed by:
+<div style="background-color: #0d1117; padding: 16px; border-radius: 6px; margin-bottom: 16px;">
+  <pre style="margin: 0;"><code style="color: #c9d1d9; background-color: #0d1117;">from finta import TA</code></pre>
+</div>
+Read more about the documentation on finta here: 
+
+- [Finta](https://www.tensorflow.org/install/](https://github.com/peerchemist/finta/tree/master)https://github.com/peerchemist/finta/tree/master)
+
+This will give you a df as follows:
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/stevienovak/garage/main/DF_with_indicators.jpg" alt="w_indicators" height="300">
+</p>
+
+alternatively, add on the sentiment score given by our FinBert model, this will provide you a df as follows: 
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/stevienovak/garage/main/df_w_sentiments.jpg" alt="w_sentiment" height="300">
+</p>
+
+
 
 
