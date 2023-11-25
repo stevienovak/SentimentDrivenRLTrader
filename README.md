@@ -73,6 +73,33 @@ In this section, I briefly explain different parts of the project and how to cha
   <img src="https://raw.githubusercontent.com/stevienovak/garage/main/basic_dataframe.jpg" alt="Basic_df" height="300">
 </p>
 
+There are two models you can obtain from this repository
+- Model 1: our unique pretrained FinBERT Model trained on 18 months ( 01 Jan 2022 to 30 Jun 2023) of Stockwit data.
+- Model 2: our RL model. []
+
+To load the FinBERT Model on you local environment via the following code block (please note that we are using google colab here, code block as follows: 
+
+<div style="background-color: #0d1117; padding: 16px; border-radius: 6px; margin-bottom: 16px;">
+  <pre style="margin: 0;"><code style="color: #c9d1d9; background-color: #0d1117;">from torch.utils.data import SequentialSampler</code></pre>
+</div>
+<div style="background-color: #0d1117; padding: 16px; border-radius: 6px; margin-bottom: 16px;">
+  <pre style="margin: 0;"><code style="color: #c9d1d9; background-color: #0d1117;">model = BertForSequenceClassification.from_pretrained("/content/drive/<local_drive_where_model_was_saved></code></pre>
+</div>
+<div style="background-color: #0d1117; padding: 16px; border-radius: 6px; margin-bottom: 16px;">
+  <pre style="margin: 0;"><code style="color: #c9d1d9; background-color: #0d1117;">tokenizer = BertTokenizer.from_pretrained('ProsusAI/finbert')></code></pre>
+</div>
+<div style="background-color: #0d1117; padding: 16px; border-radius: 6px; margin-bottom: 16px;">
+  <pre style="margin: 0;"><code style="color: #c9d1d9; background-color: #0d1117;">device = torch.device("cuda" if torch.cuda.is_available() else "cpu")></code></pre>
+</div>
+<div style="background-color: #0d1117; padding: 16px; border-radius: 6px; margin-bottom: 16px;">
+  <pre style="margin: 0;"><code style="color: #c9d1d9; background-color: #0d1117;">model.to(device)</code></pre>
+</div>
+
+Think yourself as a savy investor, you can test out your newly model with your comments as follows!!: 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/stevienovak/garage/main/BERT_model_test.jpg" alt="w_indicators" height="300">
+</p>
+
 
 you can add on technical indicators by performing the following: 
 <div style="background-color: #0d1117; padding: 16px; border-radius: 6px; margin-bottom: 16px;">
