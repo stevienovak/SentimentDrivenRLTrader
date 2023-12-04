@@ -11,7 +11,7 @@ The data is available under MIT License. Usage restrictions include adherence to
 
 3. Citations and Acknowledgments
 When using this data, please cite as follows: \
-Pu Z, John K, Chi H, Steven O. (2023). Using Data Science to Predict Stock Market Movements.
+Pu Z, John K, Chi H, Steven O. (2023). Advanced Algorithmic Stock Trading: Integrating Deep Reinforcement Learning with NLP Sentiment Analysis Techniques.
 
 5. Contact Information
 For further inquiries about the data, please contact us as follows: 
