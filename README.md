@@ -62,7 +62,7 @@ In this section, I briefly explain different parts of the project and how to cha
 
 <p align="center">
 
-  <img src="https://raw.githubusercontent.com/stevienovak/garage/main/Capstone_FlowChart.jpg" alt="Basic_df" height="500">
+  <img src="https://raw.githubusercontent.com/stevienovak/garage/main/Capstone_FlowChart.jpg" alt="Basic_df" height="400">
 </p>
 
 
