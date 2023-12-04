@@ -10,9 +10,10 @@ Access to the data requires registration on the website and acceptance of the we
 The data is available under MIT License. Usage restrictions include adherence to the terms and conditions specified in the MIT License, primarily requiring proper attribution and not holding the data providers liable for any damages arising from use. 
 
 3. Citations and Acknowledgments
-When using this data, please cite as follows: Pu Z, John K, Chi H, Steven O. (2023). Using Data Science to Predict Stock Market Movements.
+When using this data, please cite as follows: \
+Pu Z, John K, Chi H, Steven O. (2023). Using Data Science to Predict Stock Market Movements.
 
-4. Contact Information
+5. Contact Information
 For further inquiries about the data, please contact us as follows: 
 1. Pu Zeng, puzeng@umich.edu
 2. John Kasper, kaspersj@umich.edu
