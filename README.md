@@ -32,9 +32,10 @@ Before running the notebook, you'll first need to download all data we'll be usi
 </div>
 
 ## Requirements and Installation
-In order to run the notebooks, you'll need the following libraries:
+In order to run the notebooks, you'll need the following key libraries:
 
 - [TensorFLow](https://www.tensorflow.org/install/)
+- [pyTorch](https://pytorch.org/get-started/locally/)
 
 ## Installing Anaconda Python and TensorFlow
 
@@ -64,8 +65,8 @@ In this section, I briefly explain different parts of the project and how to cha
 </p>
 
 There are two models you can obtain from this repository
-- Model 1: our unique pretrained FinBERT Model trained on 18 months ( 01 Jan 2022 to 30 Jun 2023) of Stockwit data.
-- Model 2: our RL model. []
+- Model 1: our unique pretrained FinBERT Model trained and validated using 01 Jan 2009 to 31 December 2016 Stockwit data.
+- Model 2: our RL models trained and tested using 01 January 2017 to 31 December 2019 data.  
 
 To load the FinBERT Model on you local environment via the following code block (please note that we are using google colab here, code block as follows: 
 
