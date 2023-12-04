@@ -24,7 +24,7 @@
 Reinforcement Learning Framework for Stock Trading Using Sentiment Analysis. This repository hosts a novel RL-based trading model that integrates real-time market sentiment to make informed buy and sell decisions. 
 
 ## Downloading Data
-Before running the notebook, you'll first need to download all data we'll be using. This data is located in the models.tar.gz and training_data.tar.gz tarballs. As always, the first step is to clone the repository.
+Before running the notebook, you'll first need to download all data we'll be using. This data is located in the data folder. As always, the first step is to clone the repository.
 
 
 <div style="background-color: #0d1117; padding: 16px; border-radius: 6px; margin-bottom: 16px;">
