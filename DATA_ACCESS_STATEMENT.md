@@ -4,7 +4,7 @@
 This project uses data sourced from Stockwits and Yahoo Finance, which is publicly available at the following links: https://stocktwits.com/, https://finance.yahoo.com/
 
 2. Accesibiliity
-Access to the data requires registration on the website and acceptance of the website\'92s terms and conditions. 
+Access to the data requires registration on the website and acceptance of the website's terms and conditions. 
 
 3. Usage Rights and Restrictions
 The data is available under MIT License. Usage restrictions include adherence to the terms and conditions specified in the MIT License, primarily requiring proper attribution and not holding the data providers liable for any damages arising from use. 
