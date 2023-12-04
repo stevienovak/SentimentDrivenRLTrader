@@ -23,7 +23,7 @@
 
 Reinforcement Learning Framework for Stock Trading Using Sentiment Analysis. This repository hosts a novel RL-based trading model that integrates real-time market sentiment to make informed buy and sell decisions. 
 
-## Downloading Data
+## 1. Downloading Repository / Data
 Before running the notebook, you'll first need to download all data we'll be using. This data is located in the data folder. As always, the first step is to clone the repository.
 
 
@@ -31,13 +31,13 @@ Before running the notebook, you'll first need to download all data we'll be usi
   <pre style="margin: 0;"><code style="color: #c9d1d9; background-color: #0d1117;">git clone https://github.com/stevienovak/SentimentDrivenRLTrader.git</code></pre>
 </div>
 
-## Requirements and Installation
+## 2. Requirements and Installation
 In order to run the notebooks, you'll need the following key libraries:
 
 - [TensorFLow](https://www.tensorflow.org/install/)
 - [pyTorch](https://pytorch.org/get-started/locally/)
 
-## Installing Anaconda Python and TensorFlow
+### 2.1 Installing Anaconda Python and TensorFlow
 
 The easiest way to install TensorFlow as well as NumPy, Jupyter, and matplotlib is to start with the Anaconda Python distribution.
 Follow the installation instructions for [Anaconda Python](https://www.anaconda.com/download). We recommend using Python 3.7.
@@ -57,7 +57,14 @@ Launch Jupyter by entering
   <pre style="margin: 0;"><code style="color: #c9d1d9; background-color: #0d1117;">jupyter lab</code></pre>
 </div>
 
-## Guidelines
+### 2.2 Install the required modules
+<div style="background-color: #0d1117; padding: 16px; border-radius: 6px; margin-bottom: 16px;">
+  <pre style="margin: 0;"><code style="color: #c9d1d9; background-color: #0d1117;">pip install -r requirements.txt</code></pre>
+</div>
+
+
+
+## 3. Guidelines
 In this section, I briefly explain different parts of the project and how to change each. Our Workflow is as follows:
 
 <p align="center">
@@ -76,6 +83,7 @@ Then you create a directory with the name of the stock under the data directory 
   <img src="https://raw.githubusercontent.com/stevienovak/garage/main/basic_dataframe.jpg" alt="Basic_df" height="300">
 </p>
 
+## 4. Models 
 There are two models you can obtain from this repository
 - Model 1: our unique pretrained FinBERT Model trained and validated using 01 Jan 2009 to 31 December 2016 Stockwit data.
 - Model 2: our RL models trained and tested using 01 January 2017 to 31 December 2019 data.  
