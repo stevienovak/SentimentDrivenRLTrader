@@ -31,16 +31,6 @@ Before running the notebook, you'll first need to download all data we'll be usi
   <pre style="margin: 0;"><code style="color: #c9d1d9; background-color: #0d1117;">git clone https://github.com/stevienovak/SentimentDrivenRLTrader.git</code></pre>
 </div>
 
-Next, we will navigate to the newly created directory and run the following commands.
-
-<div style="background-color: #0d1117; padding: 16px; border-radius: 6px; margin-bottom: 16px;">
-  <pre style="margin: 0;"><code style="color: #c9d1d9; background-color: #0d1117;">tar -xvzf base_models.tar.gz</code></pre>
-</div>
-
-<div style="background-color: #0d1117; padding: 16px; border-radius: 6px; margin-bottom: 16px;">
-  <pre style="margin: 0;"><code style="color: #c9d1d9; background-color: #0d1117;">tar -xvzf dataset.tar.gz</code></pre>
-</div>
-
 ## Requirements and Installation
 In order to run the notebooks, you'll need the following libraries:
 
