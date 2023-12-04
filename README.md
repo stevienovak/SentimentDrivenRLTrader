@@ -58,7 +58,19 @@ Launch Jupyter by entering
 </div>
 
 ## Guidelines
-In this section, I briefly explain different parts of the project and how to change each. The data for the project downloaded from Yahoo Finance where you can search for a specific market there and download your data under the Historical Data section. Then you create a directory with the name of the stock under the data directory and put the .csv file there. Make sure the dataframe is in the format as follows:
+In this section, I briefly explain different parts of the project and how to change each. Our Workflow is as follows:
+
+<p align="center">
+
+  <img src="https://raw.githubusercontent.com/stevienovak/garage/main/Capstone_FlowChart.jpg" alt="Basic_df" height="500">
+</p>
+
+
+
+The data for the project downloaded from Yahoo Finance where you can search for a specific market there and download your data under the Historical Data section. 
+
+
+Then you create a directory with the name of the stock under the data directory and put the .csv file there. Make sure the dataframe is in the format as follows:
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/stevienovak/garage/main/basic_dataframe.jpg" alt="Basic_df" height="300">
