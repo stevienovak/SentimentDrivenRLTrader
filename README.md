@@ -21,7 +21,13 @@
 
 # SentimentDrivenRLTrader
 
-Reinforcement Learning Framework for Stock Trading Using Sentiment Analysis. This repository hosts a novel RL-based trading model that integrates real-time market sentiment to make informed buy and sell decisions. 
+This repository hosts a novel reinforcement Learning ("RL") -based trading model that integrates real-time market sentiment to make informed buy and sell decisions. 
+
+Main features of this library are: 
+- 10 Reinforcement Learning models for discrete space and two RL models for continuous space (split evenly between Tripartite and Quinduple Sentiment Categories).
+- NLP FinBERT Model trained on Stockwit investors' comments data.
+- Notebooks to help you in cleaning and preparing files with the pricing and sentiment score columns to be used for RL models.
+- Extra features which will be come in handy for future research. 
 
 ## 1. Downloading Repository / Data
 Before running the notebook, you'll first need to download all data we'll be using. This data is located in the data folder. As always, the first step is to clone the repository.
@@ -64,7 +70,7 @@ Launch Jupyter by entering
 
 
 
-## 3. Guidelines
+## 3. Guidelines & Project Structure
 In this section, I briefly explain different parts of the project and how to change each. Our Workflow is as follows:
 
 <p align="center">
@@ -72,9 +78,7 @@ In this section, I briefly explain different parts of the project and how to cha
   <img src="https://raw.githubusercontent.com/stevienovak/garage/main/Capstone_FlowChart.jpg" alt="Basic_df" height="400">
 </p>
 
-
-
-The data for the project downloaded from Yahoo Finance where you can search for a specific market there and download your data under the Historical Data section. 
+The data for the project downloaded from Yahoo Finance where you can search for a specific market there and download your data under the Historical Data section. We included a tiny dataset in the [] folder making up of 100 lines for you the reader to appreciate the file structure, columns required to replicate our work. 
 
 
 Then you create a directory with the name of the stock under the data directory and put the .csv file there. Make sure the dataframe is in the format as follows:
@@ -136,6 +140,14 @@ alternatively, add on the sentiment score given by our FinBert model, this will 
   <img src="https://raw.githubusercontent.com/stevienovak/garage/main/df_w_sentiments.jpg" alt="w_sentiment" height="300">
 </p>
 
+## 5. Outputs
+Using the 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/stevienovak/garage/main/Tripartite_vs_Quintuple.jpg" alt="w_sentiment" height="300">
+</p>
 
+
+
+## 6. Possible Approaches to Future Work
 
 
