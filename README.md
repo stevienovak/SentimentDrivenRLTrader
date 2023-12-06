@@ -21,17 +21,16 @@
 
 # SentimentDrivenRLTrader
 
-This repository hosts a novel reinforcement Learning ("RL") -based trading model that integrates real-time market sentiment to make informed buy and sell decisions. 
+This repository hosts a novel reinforcement Learning ("RL") -based trading model that integrates market sentiment to make informed buy and sell decisions. 
 
 Main features of this library are: 
-- 10 Reinforcement Learning models for discrete space and two RL models for continuous space (split evenly between Tripartite and Quinduple Sentiment Categories).
+- A suite of reinforcement learning models, comprising ten tailored for discrete action spaces and two designed for continuous action spaces. The discrete models are distributed evenly across Tripartite and Quintuple Sentiment Categories, while the continuous models are split equally between these two sentiment classification schemes.
 - NLP FinBERT Model trained on Stockwit investors' comments data.
 - Notebooks to help you in cleaning and preparing files with the pricing and sentiment score columns to be used for RL models.
-- Extra features which will be come in handy for future research. 
+- Extra features which will be useful for future research. 
 
-## 1. Downloading Repository / Data
-Before running the notebook, you'll first need to download all data we'll be using. This data is located in the data folder. As always, the first step is to clone the repository.
-
+## 1. Downloading Repository 
+Before running the notebook, the first step is to clone the repository: 
 
 <div style="background-color: #0d1117; padding: 16px; border-radius: 6px; margin-bottom: 16px;">
   <pre style="margin: 0;"><code style="color: #c9d1d9; background-color: #0d1117;">git clone https://github.com/stevienovak/SentimentDrivenRLTrader.git</code></pre>
@@ -71,26 +70,30 @@ Launch Jupyter by entering
 
 
 ## 3. Guidelines & Project Structure
-In this section, I briefly explain different parts of the project and how to change each. Our Workflow is as follows:
+In this section, we briefly explain different parts of the project and how to change each. Our Workflow is as follows:
 
 <p align="center">
 
-  <img src="https://raw.githubusercontent.com/stevienovak/garage/main/Capstone_FlowChart.jpg" alt="Basic_df" height="400">
+  <img src="https://raw.githubusercontent.com/stevienovak/garage/main/tree2.jpg" alt="Basic_df" height="400">
 </p>
 
-The data for the project downloaded from Yahoo Finance where you can search for a specific market there and download your data under the Historical Data section. We included a tiny dataset in the [] folder making up of 100 lines for you the reader to appreciate the file structure, columns required to replicate our work. 
+### 3.1 Data Access
+For the project, we sourced our data from the following platforms, adhering to their respective data licensing terms and conditions:
 
+- Yahoo Finance: Here, you can search for specific markets and download the necessary data from the 'Historical Data' section.
+- Stocktwits: While we have utilized data from Stocktwits, we fully respect and comply with their data usage policies. Consequently, we will not display or detail the methods used to obtain the data. However, you can access investor sentiments and discussions directly at [Stocktwits](https://stocktwits.com).
 
-Then you create a directory with the name of the stock under the data directory and put the .csv file there. Make sure the dataframe is in the format as follows:
+Contained within the `00_Data folder` is a compact dataset, consisting of 100 entries, provided for you, the reader, to engage with our models. This sample is intended to help you understand the file architecture and the specific columns necessary to duplicate our research and results.
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/stevienovak/garage/main/basic_dataframe.jpg" alt="Basic_df" height="300">
-</p>
+### 3.2 Data Cleaning and Pre-processing
+You can find the necessary data cleaning and pre-processing procedures in the notebooks located in the `01_Data Cleaning, Sentiment Analysis` directory. These steps are crucial for refining, preprocessing, and balancing the data, ensuring it's primed for use with our Tripartite and Quintuple sentiment models.
 
 ## 4. Models 
 There are two models you can obtain from this repository
-- Model 1: our unique pretrained FinBERT Model trained and validated using 01 Jan 2009 to 31 December 2016 Stockwit data.
-- Model 2: our RL models trained and tested using 01 January 2017 to 31 December 2019 data.  
+
+### 4.1 Quinduple / Tripartite Sentiment Categories Model 
+- You can obtian from `02_Bert implementation, Quinduple Sentiment Categories Genesis` our unique pretrained FinBERT Model trained and validated using 01 Jan 2009 to 31 December 2016 Stockwit data.
+
 
 To load the FinBERT Model on you local environment via the following code block (please note that we are using google colab here, code block as follows: 
 
@@ -115,6 +118,11 @@ Think yourself as a savy investor, you can test out your newly model with your c
   <img src="https://raw.githubusercontent.com/stevienovak/garage/main/BERT_model_test.jpg" alt="w_indicators" height="300">
 </p>
 
+If you followed the steps so far and done the implementation properly, you will get the table as follows:
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/stevienovak/garage/main/Quintuple_Tripartite_Sentiment_Categories.jpg"alt="w_indicators" height="300">
+</p>
 
 you can add on technical indicators by performing the following: 
 <div style="background-color: #0d1117; padding: 16px; border-radius: 6px; margin-bottom: 16px;">
@@ -131,17 +139,19 @@ Read more about the documentation on finta here:
 This will give you a df as follows:
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/stevienovak/garage/main/DF_with_indicators.jpg" alt="w_indicators" height="300">
+  <img src="https://raw.githubusercontent.com/stevienovak/garage/main/df_w_sentiments.jpg" alt="w_indicators" height="300">
 </p>
 
-alternatively, add on the sentiment score given by our FinBert model, this will provide you a df as follows: 
+Congrats on getting to this step! you can now proceed with using our reinforcement learning models. 
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/stevienovak/garage/main/df_w_sentiments.jpg" alt="w_sentiment" height="300">
-</p>
+### 4.2 Reinforcement Learning Model 
+- For discrete action spaces, we used Deep Q-Network (DQN), Double Deep Q-Network (DDQN), Distributional Reinforcement Learning (C51), and Quantile Regression-based Distributional RL (QRDQN).
+- Proximal Policy Optimization (PPO) was employed for continuous action spaces.
+
+You may access them from the following folders: `03_RL Models - Quinduple Sentiment Categories` and `04_RL Models - Tripartite Sentiment Categories`. 
 
 ## 5. Outputs
-Using the 
+Using the code in the Continuous action space `036_PPO.ipynb` and `046_PPO.ipynb`, you can plot the results as follows:
 <p align="center">
   <img src="https://raw.githubusercontent.com/stevienovak/garage/main/Tripartite_vs_Quintuple.jpg" alt="w_sentiment" height="300">
 </p>
@@ -149,5 +159,16 @@ Using the
 
 
 ## 6. Possible Approaches to Future Work
+When working on the project, we developed a function to calculate 'novelty' and 'volume' metrics from stock data, aiming to explore deeper insights into market dynamics. The function iterates through our stock data, calculating these metrics for different time windows (0.5, 1, 3, 5, and 7 days). You can retrieve the function from the following folder `06_Useful features for future reserarch`. 
+
+While these features offered potential insights into market trends and stock behavior, we ultimately decided not to include them in our final models to prevent overfitting and keeping model simplicity. we conducted a correlation analysis to explore the relationship between the novelty and volume features and the five sentiment categories. 
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/stevienovak/garage/main/Correlation_Analysis.jpg" alt="w_sentiment" height="1000">
+</p>
+
+Our analysis revealed no significant correlation between these newly developed features and the sentiment categories. Nonetheless, it's important to note that the absence of a strong correlation doesn't necessarily render these features irrelevant for our model. Even a modest correlation score might contribute to enhancing the performance of the reinforcement learning model. 
+
+Although we chose not to incorporate these features in our current RL model, they present a promising avenue for future research, offering potential insights that could further refine algorithmic strategies!
 
 
