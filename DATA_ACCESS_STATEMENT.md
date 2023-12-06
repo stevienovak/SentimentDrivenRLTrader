@@ -1,4 +1,4 @@
-## Data Access Statement as at December 04, 2023
+## Data Access Statement as of December 04, 2023
 
 1. Data Source
 This project uses data sourced from Stockwits and Yahoo Finance, which is publicly available at the following links: https://stocktwits.com/, https://finance.yahoo.com/
