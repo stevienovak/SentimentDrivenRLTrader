@@ -153,7 +153,7 @@ You may access them from the following folders: `03_RL Models - Quinduple Sentim
 ## 5. Outputs
 Using the code in the Continuous action space `036_PPO.ipynb` and `046_PPO.ipynb`, you can plot the results as follows:
 <p align="center">
-  <img src="https://raw.githubusercontent.com/stevienovak/garage/main/Tripartite_vs_Quintuple.jpg" alt="w_sentiment" height="300">
+  <img src="https://raw.githubusercontent.com/stevienovak/garage/main/PPO%20Model.jpg" alt="w_sentiment" height="300">
 </p>
 
 
