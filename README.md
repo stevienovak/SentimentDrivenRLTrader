@@ -74,7 +74,7 @@ In this section, we briefly explain different parts of the project and how to ch
 
 <p align="center">
 
-  <img src="https://raw.githubusercontent.com/stevienovak/garage/main/tree2.jpg" alt="Basic_df" height="400">
+  <img src="https://raw.githubusercontent.com/stevienovak/garage/main/0712_Flow%20Chart.jpg" alt="Flow_Chart" height="400">
 </p>
 
 ### 3.1 Data Access
