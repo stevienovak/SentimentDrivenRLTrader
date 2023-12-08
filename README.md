@@ -148,7 +148,7 @@ Congrats on getting to this step! you can now proceed with using our reinforceme
 - For discrete action spaces, we used Deep Q-Network (DQN), Double Deep Q-Network (DDQN), Distributional Reinforcement Learning (C51), and Quantile Regression-based Distributional RL (QRDQN).
 - Proximal Policy Optimization (PPO) was employed for continuous action spaces.
 
-You may access them from the following folders: `03_RL Models - Quinduple Sentiment Categories` and `04_RL Models - Tripartite Sentiment Categories`. 
+You may access them from the following folders: `04_RL Models - Quinduple Sentiment Categories` and `05_RL Models - Tripartite Sentiment Categories`. 
 
 ## 5. Outputs
 Using the code in the Continuous action space `036_PPO.ipynb` and `046_PPO.ipynb`, you can plot the results as follows:
