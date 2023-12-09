@@ -16,6 +16,6 @@ Pu Z, John K, Chi H, Steven O. (2023). Advanced Algorithmic Stock Trading: Integ
 5. Contact Information
 For further inquiries about the data, please contact us as follows: 
 - Pu Zeng, puzeng@umich.edu
-- John Kasper, kaspersj@umich.edu
+- John Kaspers, kaspersj@umich.edu
 - Chi Huen Fong, chfong@umich.edu
 - Steven Ong, steveong@umich.edu
