@@ -156,10 +156,11 @@ Using the code in the Continuous action space `036_PPO.ipynb` and `046_PPO.ipynb
   <img src="https://raw.githubusercontent.com/stevienovak/garage/main/PPO%20Model.jpg" alt="w_sentiment" height="300">
 </p>
 
+## 6. Outputs
+Benchmark your model's performance against that of mutual funds using our Python package provided in the `06_Benchmark Against Mutual Funds` directory.
 
-
-## 6. Possible Approaches to Future Work
-When working on the project, we developed a function to calculate 'novelty' and 'volume' metrics from stock data, aiming to explore deeper insights into market dynamics. The function iterates through our stock data, calculating these metrics for different time windows (0.5, 1, 3, 5, and 7 days). You can retrieve the function from the following folder `06_Useful features for future reserarch`. 
+## 7. Possible Approaches to Future Work
+When working on the project, we developed a function to calculate 'novelty' and 'volume' metrics from stock data, aiming to explore deeper insights into market dynamics. The function iterates through our stock data, calculating these metrics for different time windows (0.5, 1, 3, 5, and 7 days). You can retrieve the function from the following folder `07_Useful features for future reserarch`. 
 
 While these features offered potential insights into market trends and stock behavior, we ultimately decided not to include them in our final models to prevent overfitting and keeping model simplicity. we conducted a correlation analysis to explore the relationship between the novelty and volume features and the five sentiment categories. 
 
