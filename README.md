@@ -6,9 +6,10 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/license-MIT-green" alt="License">
-  <img src="https://img.shields.io/badge/build-passing-brightgreen" alt="Build">
-  <img src="https://img.shields.io/badge/docs-red" alt="Documentation">
+  <img src="https://img.shields.io/badge/build-pass-brightgreen" alt="Build">
+  <img src="https://img.shields.io/badge/docs-pass-red" alt="Documentation">
   <img src="https://img.shields.io/badge/pypi-v0.3.3-blue" alt="PyPI Version">
+  <img src="https://img.shields.io/badge/TensorFlow-v2.15-maroon" alt="TensorFlow Version">  
 </p>
 <p align="center">
   <img src="https://img.shields.io/badge/downloads-100%2Fmonth-brightgreen" alt="Downloads">
