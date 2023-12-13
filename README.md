@@ -7,7 +7,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/license-MIT-green" alt="License">
   <img src="https://img.shields.io/badge/build-passing-brightgreen" alt="Build">
-  <img src="https://img.shields.io/badge/docs-failing-red" alt="Documentation">
+  <img src="https://img.shields.io/badge/docs-red" alt="Documentation">
   <img src="https://img.shields.io/badge/pypi-v0.3.3-blue" alt="PyPI Version">
 </p>
 <p align="center">
